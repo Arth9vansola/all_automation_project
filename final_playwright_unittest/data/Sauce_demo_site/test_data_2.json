@@ -1,0 +1,34 @@
+{
+  "_comments": {
+    "login_user": "TC1+TC3+TC9+TC10+TC11",
+    "login_user_wrong": "TC2",
+    "add_to_cart": "TC4+TC6+TC8+TC9+TC10+TC11",
+    "view_prodcut": "TC5+TC7",
+    "checkout_details": "TC11"
+  },
+
+  "login_user":{
+    "user_name":"standard_user",
+    "password":"secret_sauce"
+  },
+
+  "login_user_wrong":{
+  "user_name":"locked_out_user",
+  "password":"secret_sauce"
+  },
+
+  "add_to_cart":{
+    "product_name":["Sauce Labs Backpack","Sauce Labs Bike Light","Sauce Labs Bolt T-Shirt"]
+  },
+
+  "view_prodcut":{
+    "product_name":"Sauce Labs Bolt T-Shirt"
+  },
+
+  "checkout_details":{
+    "first_name":"tanish",
+    "last_name":"makwana",
+    "postal_code":"12345"
+  }
+   
+}

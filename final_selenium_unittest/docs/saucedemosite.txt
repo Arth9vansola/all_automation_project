@@ -1,0 +1,134 @@
+TC01: Login with Correct Credentials
+    1.Launch browser
+    2.Navigate to SauceDemo
+    3.login page verification
+    4.Enter valid username, password
+    5.Click Login
+    6.Verify user is navigated to Products page
+
+TC02: Login with Wrong Credentials
+    1.Launch browser
+    2.Navigate to SauceDemo
+    3.login page verification
+    4.Enter valid username, password
+    5.Click Login
+    6.Verify that error message is shown
+
+TC03: Logout User
+    1.Launch browser
+    2.Navigate to SauceDemo
+    3.login page verification
+    4.Enter valid username, password
+    5.Click Login
+    6.Verify that login is successfull
+    7.Open hamburger menu
+    8.Click on logout button 
+    9.Verify user is redirected to Login page
+
+TC04: Add Product to Cart
+    1.Launch browser
+    2.Navigate to SauceDemo
+    3.login page verification
+    4.Enter valid username, password
+    5.Click Login
+    6.Verify that login is successfull
+    7.Click Add to Cart on a product
+    8.click on cart button 
+    9.now validate product in cart
+
+TC05: View Product Details
+    1.Launch browser
+    2.Navigate to SauceDemo
+    3.login page verification
+    4.Enter valid username, password
+    5.Click Login
+    6.Verify that login is successfull
+    7.Click on a product name
+    8.Verify that view product is visible
+
+
+TC06: Remove Product from Cart
+    1.Launch browser
+    2.Navigate to SauceDemo
+    3.login page verification
+    4.Enter valid username, password
+    5.Click Login
+    6.Verify that login is successfull
+    7.Click on a product name
+    8.Go to Cart page
+    9.Now validate product in cart
+    10.Remove product from cart
+    11.Verify that product is removed from cart
+
+TC07: View Product → Add to Cart → Verify Correct Product
+    1.Launch browser
+    2.Navigate to SauceDemo
+    3.login page verification
+    4.Enter valid username, password
+    5.Click Login
+    6.Verify that login is successfull
+    7.Click on a product name
+    8.Verify that view product is visible
+    9.Click Add to Cart
+    10.Go to Cart page
+    11.Verify same product name is added to cart
+
+TC08: navigate to product page by continue shopping
+    1.Launch browser
+    2.Navigate to SauceDemo
+    3.login page verification
+    4.Enter valid username, password
+    5.Click Login
+    6.Verify that login is successfull
+    7.Add product to cart
+    8.Go to Cart page
+    9.Now validate product in cart
+    10.Click Continue Shopping
+    11.Verify user is navigated back to Products page
+
+TC09: Checkout After Adding Product
+    1.Launch browser
+    2.Navigate to SauceDemo
+    3.login page verification
+    4.Enter valid username, password
+    5.Click Login
+    6.Verify that login is successfull
+    7.Add product to cart
+    8.Go to Cart page
+    9.Now validate product in cart
+    10.Click Checkout
+    11.Verify checkout information page is displayed
+
+TC10: Checkout with Empty Details 
+    1.Launch browser
+    2.Navigate to SauceDemo
+    3.login page verification
+    4.Enter valid username, password
+    5.Click Login
+    6.Verify that login is successfull
+    7.Add product to cart
+    8.Go to Cart page
+    9.Now validate product in cart    
+    10.Click Checkout
+    11.Verify checkout information page is displayed    
+    12.Leave First Name, Last Name, Zip empty
+    13.Click Continue button
+    14.Verify error message is shown
+
+TC11: Checkout with Correct Details
+    1.Launch browser
+    2.Navigate to SauceDemo
+    3.login page verification
+    4.Enter valid username, password
+    5.Click Login
+    6.Verify that login is successfull
+    7.Add product to cart
+    8.Go to Cart page
+    9.Now validate product in cart    
+    10.Click Checkout    
+    11.Verify that checkout information page is visible    
+    12.Enter valid First Name, Last Name, Zip
+    13.Click Continue
+    15.Verify total price in respect of product    
+    14.Click Finish
+    15.Verify order success message

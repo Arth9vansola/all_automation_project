@@ -1,0 +1,17 @@
+class By:
+
+    ID = "id"
+    XPATH = "xpath"
+    LINK_TEXT = "link_text"
+    PARTIAL_LINK_TEXT = "partial_link_text"
+    NAME = "name"
+    TAG_NAME = "tag_name"
+    CLASS_NAME = "class_name"
+    CSS_SELECTOR = "css_selector"
+    PLACE_HOLDER = "get_by_placeholder"
+    ALT_TEXT = "get_by_alt_text"
+    LABEL ="get_by_label"
+    ROLE = "get_by_role"
+    TEST_ID = "get_by_test_id"
+    TEXT = "get_by_text"
+    TITLE = "get_by_title"

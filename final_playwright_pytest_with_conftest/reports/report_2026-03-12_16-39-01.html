@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">Master Automation &amp; SauceDemo Report</title>
+      <link href="assets\style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">Master Automation &amp; SauceDemo Report</h1>
+    <p>Report generated on 12-Mar-2026 at 16:45:21 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.2.0</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="5">No results found. Check the filters.</td>
+        </tr>
+      </tbody>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="5">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left">&lt;</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">&gt;</div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">32 tests took 00:06:20.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" >
+            <span class="failed">14 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" >
+            <span class="passed">18 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" >
+            <span class="error">5 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled>
+            <span class="rerun">0 Reruns</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="retried" disabled>
+            <span class="retried">0 Retried,</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th>Site Category</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.10.0&#34;, &#34;Platform&#34;: &#34;Windows-10-10.0.26100-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;9.0.2&#34;, &#34;pluggy&#34;: &#34;1.6.0&#34;}, &#34;Plugins&#34;: {&#34;html&#34;: &#34;4.2.0&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;, &#34;xdist&#34;: &#34;3.8.0&#34;}}, &#34;tests&#34;: {&#34;Tests/Sauce_demo_site/test_authentication.py::TestAuthentication::test_1_verify_account_login_with_correct_credentials&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Tests/Sauce_demo_site/test_authentication.py::TestAuthentication::test_1_verify_account_login_with_correct_credentials&#34;, &#34;duration&#34;: &#34;00:00:05&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td&gt;SAUCE DEMO SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Sauce_demo_site/test_authentication.py::TestAuthentication::test_1_verify_account_login_with_correct_credentials&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:05&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n&#34;}], &#34;Tests/Sauce_demo_site/test_authentication.py::TestAuthentication::test_2_verify_account_login_with_incorrect_credentials&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Tests/Sauce_demo_site/test_authentication.py::TestAuthentication::test_2_verify_account_login_with_incorrect_credentials&#34;, &#34;duration&#34;: &#34;00:00:05&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td&gt;SAUCE DEMO SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Sauce_demo_site/test_authentication.py::TestAuthentication::test_2_verify_account_login_with_incorrect_credentials&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:05&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n&#34;}], &#34;Tests/Sauce_demo_site/test_authentication.py::TestAuthentication::test_3_verify_account_logout_user&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Tests/Sauce_demo_site/test_authentication.py::TestAuthentication::test_3_verify_account_logout_user&#34;, &#34;duration&#34;: &#34;00:00:04&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td&gt;SAUCE DEMO SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Sauce_demo_site/test_authentication.py::TestAuthentication::test_3_verify_account_logout_user&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:04&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n&#34;}], &#34;Tests/Sauce_demo_site/test_cart.py::TestCart::test_4_verify_add_to_cart&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Tests/Sauce_demo_site/test_cart.py::TestCart::test_4_verify_add_to_cart&#34;, &#34;duration&#34;: &#34;00:00:04&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td&gt;SAUCE DEMO SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Sauce_demo_site/test_cart.py::TestCart::test_4_verify_add_to_cart&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:04&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n&#34;}], &#34;Tests/Sauce_demo_site/test_cart.py::TestCart::test_6_verify_remove_from_cart&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Tests/Sauce_demo_site/test_cart.py::TestCart::test_6_verify_remove_from_cart&#34;, &#34;duration&#34;: &#34;00:00:05&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td&gt;SAUCE DEMO SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Sauce_demo_site/test_cart.py::TestCart::test_6_verify_remove_from_cart&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:05&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n&#34;}], &#34;Tests/Automation_Exercise/test_authentication.py::TestAutoAuthentication::test_1_verify_account_registered_deleted&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_authentication.py::TestAutoAuthentication::test_1_verify_account_registered_deleted&#34;, &#34;duration&#34;: &#34;00:00:24&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td&gt;AUTOMATION SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_authentication.py::TestAutoAuthentication::test_1_verify_account_registered_deleted&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:24&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n&#34;}], &#34;Tests/Sauce_demo_site/test_cart.py::TestCart::test_8_verify_navigate_back_to_product_page_by_continue_shopping&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Tests/Sauce_demo_site/test_cart.py::TestCart::test_8_verify_navigate_back_to_product_page_by_continue_shopping&#34;, &#34;duration&#34;: &#34;00:00:05&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td&gt;SAUCE DEMO SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Sauce_demo_site/test_cart.py::TestCart::test_8_verify_navigate_back_to_product_page_by_continue_shopping&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:05&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n&#34;}], &#34;Tests/Sauce_demo_site/test_order.py::TestSauceOrder::test_9_verify_checkout_after_adding_product&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Tests/Sauce_demo_site/test_order.py::TestSauceOrder::test_9_verify_checkout_after_adding_product&#34;, &#34;duration&#34;: &#34;00:00:06&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td&gt;SAUCE DEMO SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Sauce_demo_site/test_order.py::TestSauceOrder::test_9_verify_checkout_after_adding_product&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:06&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n&#34;}], &#34;Tests/Sauce_demo_site/test_order.py::TestSauceOrder::test_10_verify_checkout_with_empty_details&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Tests/Sauce_demo_site/test_order.py::TestSauceOrder::test_10_verify_checkout_with_empty_details&#34;, &#34;duration&#34;: &#34;00:00:05&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td&gt;SAUCE DEMO SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Sauce_demo_site/test_order.py::TestSauceOrder::test_10_verify_checkout_with_empty_details&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:05&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n&#34;}], &#34;Tests/Sauce_demo_site/test_order.py::TestSauceOrder::test_11_verify_checkout_with_correct_details&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Tests/Sauce_demo_site/test_order.py::TestSauceOrder::test_11_verify_checkout_with_correct_details&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td&gt;SAUCE DEMO SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Sauce_demo_site/test_order.py::TestSauceOrder::test_11_verify_checkout_with_correct_details&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n&#34;}], &#34;Tests/Automation_Exercise/test_authentication.py::TestAutoAuthentication::test_2_verify_account_login_right_credentials&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_authentication.py::TestAutoAuthentication::test_2_verify_account_login_right_credentials&#34;, &#34;duration&#34;: &#34;00:00:26&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td&gt;AUTOMATION SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_authentication.py::TestAutoAuthentication::test_2_verify_account_login_right_credentials&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:26&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n&#34;}], &#34;Tests/Sauce_demo_site/test_products.py::TestSauceProducts::test_5_verify_view_product_details&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Tests/Sauce_demo_site/test_products.py::TestSauceProducts::test_5_verify_view_product_details&#34;, &#34;duration&#34;: &#34;00:00:04&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td&gt;SAUCE DEMO SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Sauce_demo_site/test_products.py::TestSauceProducts::test_5_verify_view_product_details&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:04&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n&#34;}], &#34;Tests/Sauce_demo_site/test_products.py::TestSauceProducts::test_7_verify_view_product_then_add_to_cart&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Tests/Sauce_demo_site/test_products.py::TestSauceProducts::test_7_verify_view_product_then_add_to_cart&#34;, &#34;duration&#34;: &#34;00:00:08&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td&gt;SAUCE DEMO SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Sauce_demo_site/test_products.py::TestSauceProducts::test_7_verify_view_product_then_add_to_cart&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:08&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw1] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n&#34;}], &#34;Tests/Automation_Exercise/test_authentication.py::TestAutoAuthentication::test_3_verify_account_login_wrong_credentials&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_authentication.py::TestAutoAuthentication::test_3_verify_account_login_wrong_credentials&#34;, &#34;duration&#34;: &#34;00:00:17&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td&gt;AUTOMATION SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_authentication.py::TestAutoAuthentication::test_3_verify_account_login_wrong_credentials&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:17&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n&#34;}], &#34;Tests/Automation_Exercise/test_authentication.py::TestAutoAuthentication::test_4_verify_account_logout_user&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_authentication.py::TestAutoAuthentication::test_4_verify_account_logout_user&#34;, &#34;duration&#34;: &#34;00:00:12&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td&gt;AUTOMATION SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_authentication.py::TestAutoAuthentication::test_4_verify_account_logout_user&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:12&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n&#34;}], &#34;Tests/Automation_Exercise/test_authentication.py::TestAutoAuthentication::test_5_verify_acccount_register_email_exist&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_authentication.py::TestAutoAuthentication::test_5_verify_acccount_register_email_exist&#34;, &#34;duration&#34;: &#34;00:00:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td&gt;AUTOMATION SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_authentication.py::TestAutoAuthentication::test_5_verify_acccount_register_email_exist&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n&#34;}], &#34;Tests/Automation_Exercise/test_cart.py::TestAutoCart::test_12_verify_add_products_in_cart&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_cart.py::TestAutoCart::test_12_verify_add_products_in_cart&#34;, &#34;duration&#34;: &#34;00:00:14&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td&gt;AUTOMATION SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_cart.py::TestAutoCart::test_12_verify_add_products_in_cart&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:14&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n&#34;}], &#34;Tests/Automation_Exercise/test_cart.py::TestAutoCart::test_13_verify_product_quantity_in_cart&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_cart.py::TestAutoCart::test_13_verify_product_quantity_in_cart&#34;, &#34;duration&#34;: &#34;00:00:14&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td&gt;AUTOMATION SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_cart.py::TestAutoCart::test_13_verify_product_quantity_in_cart&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:14&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n&#34;}], &#34;Tests/Automation_Exercise/test_cart.py::TestAutoCart::test_17_verify_remove_products_from_cart&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_cart.py::TestAutoCart::test_17_verify_remove_products_from_cart&#34;, &#34;duration&#34;: &#34;00:00:28&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td&gt;AUTOMATION SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_cart.py::TestAutoCart::test_17_verify_remove_products_from_cart&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:28&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n\nself = &amp;lt;Tests.Automation_Exercise.test_cart.TestAutoCart object at 0x000001E9CBB64310&amp;gt;\n\n    def test_17_verify_remove_products_from_cart(self):\n        &amp;#x27;&amp;#x27;&amp;#x27;Test Case 17: Remove Products From Cart&amp;#x27;&amp;#x27;&amp;#x27;\n        try:\n    \n            # homepage verification\n            homepage_element = self.cf.is_element_visible(By.XPATH, homePageLocator.product_button)\n            self.assertTrue(homepage_element, &amp;quot;Homepage not visible&amp;quot;)\n    \n            # click products button\n            self.cf.click_element(By.XPATH, productPageLocator.product_button)\n    \n            # Add product to cart\n            names_add = TEST_DATA_1[&amp;quot;products&amp;quot;][&amp;quot;cart_add_name&amp;quot;]\n            self.obj_productPage.add_product_to_cart_by_name(names_add[0])\n    \n            self.cf.click_element(By.XPATH, productPageLocator.continue_shopping_button)\n    \n            self.obj_productPage.add_product_to_cart_by_name(names_add[1])\n    \n            # click &amp;#x27;Cart&amp;#x27; button\n            self.cf.click_element(By.XPATH, productPageLocator.view_cart_button)\n    \n            # Cart page verification\n            cart_page = self.cf.is_element_visible(By.XPATH, cartPageLocator.cart_visible)\n            self.assertTrue(cart_page, &amp;quot;Cart page not visible&amp;quot;)\n    \n            # Click &amp;#x27;X&amp;#x27; button corresponding to particular product\n            names_remove = TEST_DATA_1[&amp;quot;products&amp;quot;][&amp;quot;remove_cart_name&amp;quot;]\n            self.obj_cartPage.remove_product_by_name(names_remove)\n    \n            # Verify that product is removed from the cart\n            empty_element = self.cf.is_element_visible(By.XPATH, cartPageLocator.empty_cart_text)\n&amp;gt;           self.assertTrue(empty_element,&amp;#x27;product is not removed from the cart&amp;#x27;)\n\nTests\\Automation_Exercise\\test_cart.py:143: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;Tests.Automation_Exercise.test_cart.TestAutoCart object at 0x000001E9CBB64310&amp;gt;\nexpr = False, msg = &amp;#x27;product is not removed from the cart&amp;#x27;\n\n    def assertTrue(self, expr, msg=None):\n        &amp;quot;&amp;quot;&amp;quot;Check that the expression is true.&amp;quot;&amp;quot;&amp;quot;\n&amp;gt;       assert expr == True, msg\nE       AssertionError: product is not removed from the cart\n\nShared\\TestAssert.py:9: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nAssertion Error: product is not removed from the cart\n&#34;}], &#34;Tests/Automation_Exercise/test_cart.py::TestAutoCart::test_22_verify_add_to_cart_from_recommended_items&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_cart.py::TestAutoCart::test_22_verify_add_to_cart_from_recommended_items&#34;, &#34;duration&#34;: &#34;00:02:13&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td&gt;AUTOMATION SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_cart.py::TestAutoCart::test_22_verify_add_to_cart_from_recommended_items&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:02:13&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n\nself = &amp;lt;Tests.Automation_Exercise.test_cart.TestAutoCart object at 0x000001E9CBB64670&amp;gt;\n\n    def test_22_verify_add_to_cart_from_recommended_items(self):\n        &amp;#x27;&amp;#x27;&amp;#x27;Test Case 22: Add to cart from Recommended items&amp;#x27;&amp;#x27;&amp;#x27;\n        try:\n    \n            # Homepage visible\n            homepage_visible = self.cf.is_element_visible(By.XPATH, homePageLocator.product_button)\n            self.assertTrue(homepage_visible, &amp;quot;Homepage is not visible&amp;quot;)\n    \n            # Scroll to bottom of page\n            self.obj_homePage.scroll_to_footer()\n    \n            # Verify &amp;#x27;RECOMMENDED ITEMS&amp;#x27; are visible\n            recommended_visible = self.cf.is_element_visible(By.XPATH, homePageLocator.recommended_items_text)\n            self.assertTrue(recommended_visible, &amp;quot;&amp;#x27;RECOMMENDED ITEMS&amp;#x27; is not visible&amp;quot;)\n    \n            # Click on &amp;#x27;Add To Cart&amp;#x27; on Recommended product\n            self.obj_homePage.click_particular_product_by_index(1)\n    \n            # Click on &amp;#x27;View Cart&amp;#x27; button\n&amp;gt;           self.cf.click_element(By.XPATH, productPageLocator.view_cart_button)\n\nTests\\Automation_Exercise\\test_cart.py:172: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nShared\\commonfunctions.py:161: in click_element\n    self.locate_element(locator, value, name).click()\n.venv\\lib\\site-packages\\playwright\\sync_api\\_generated.py:15631: in click\n    self._sync(\n.venv\\lib\\site-packages\\playwright\\_impl\\_locator.py:162: in click\n    return await self._frame._click(self._selector, strict=True, **params)\n.venv\\lib\\site-packages\\playwright\\_impl\\_frame.py:566: in _click\n    await self._channel.send(&amp;quot;click&amp;quot;, self._timeout, locals_to_params(locals()))\n.venv\\lib\\site-packages\\playwright\\_impl\\_connection.py:69: in send\n    return await self._connection.wrap_api_call(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;playwright._impl._connection.Connection object at 0x000001E9CBAE1BA0&amp;gt;\ncb = &amp;lt;function Channel.send.&amp;lt;locals&amp;gt;.&amp;lt;lambda&amp;gt; at 0x000001E9CC90D3F0&amp;gt;\nis_internal = False, title = None\n\n    async def wrap_api_call(\n        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None\n    ) -&amp;gt; Any:\n        if self._api_zone.get():\n            return await cb()\n        task = asyncio.current_task(self._loop)\n        st: List[inspect.FrameInfo] = getattr(\n            task, &amp;quot;__pw_stack__&amp;quot;, None\n        ) or inspect.stack(0)\n    \n        parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)\n        self._api_zone.set(parsed_st)\n        try:\n            return await cb()\n        except Exception as error:\n&amp;gt;           raise rewrite_error(error, f&amp;quot;{parsed_st[&amp;#x27;apiName&amp;#x27;]}: {error}&amp;quot;) from None\nE           playwright._impl._errors.TimeoutError: Locator.click: Timeout 120000ms exceeded.\nE           Call log:\nE             - waiting for locator(&amp;quot;//button[@class=&amp;#x27;btn btn-success close-modal btn-block&amp;#x27; and contains(text(),&amp;#x27;Continue Shopping&amp;#x27;)]//ancestor::div[@class=&amp;#x27;modal-footer&amp;#x27;]//preceding-sibling::div[@class=&amp;#x27;modal-body&amp;#x27;]//a[@href=&amp;#x27;/view_cart&amp;#x27;]&amp;quot;).first\nE               - locator resolved to &amp;lt;a href=&amp;quot;/view_cart&amp;quot;&amp;gt;\u2026&amp;lt;/a&amp;gt;\nE             - attempting click action\nE               2 \u00d7 waiting for element to be visible, enabled and stable\nE                 - element is not visible\nE               - retrying click action\nE               - waiting 20ms\nE               2 \u00d7 waiting for element to be visible, enabled and stable\nE                 - element is not visible\nE               - retrying click action\nE                 - waiting 100ms\nE               213 \u00d7 waiting for element to be visible, enabled and stable\nE                   - element is not visible\nE                 - retrying click action\nE                   - waiting 500ms\n\n.venv\\lib\\site-packages\\playwright\\_impl\\_connection.py:559: TimeoutError\n\n----------------------------- Captured stdout call -----------------------------\nError Occured: Locator.click: Timeout 120000ms exceeded.\nCall log:\n  - waiting for locator(&amp;quot;//button[@class=&amp;#x27;btn btn-success close-modal btn-block&amp;#x27; and contains(text(),&amp;#x27;Continue Shopping&amp;#x27;)]//ancestor::div[@class=&amp;#x27;modal-footer&amp;#x27;]//preceding-sibling::div[@class=&amp;#x27;modal-body&amp;#x27;]//a[@href=&amp;#x27;/view_cart&amp;#x27;]&amp;quot;).first\n    - locator resolved to &amp;lt;a href=&amp;quot;/view_cart&amp;quot;&amp;gt;\u2026&amp;lt;/a&amp;gt;\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is not visible\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is not visible\n    - retrying click action\n      - waiting 100ms\n    213 \u00d7 waiting for element to be visible, enabled and stable\n        - element is not visible\n      - retrying click action\n        - waiting 500ms\n\n&#34;}], &#34;Tests/Automation_Exercise/test_cart.py::TestAutoCart::test_20_verify_search_products_cart_after_login&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_cart.py::TestAutoCart::test_20_verify_search_products_cart_after_login&#34;, &#34;duration&#34;: &#34;00:00:30&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td&gt;AUTOMATION SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_cart.py::TestAutoCart::test_20_verify_search_products_cart_after_login&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:30&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n\nself = &amp;lt;Tests.Automation_Exercise.test_cart.TestAutoCart object at 0x000001E9CBB649D0&amp;gt;\n\n    def test_20_verify_search_products_cart_after_login(self):\n        &amp;#x27;&amp;#x27;&amp;#x27;Test Case 20: Search Products and Verify Cart After Login&amp;#x27;&amp;#x27;&amp;#x27;\n        try:\n    \n            # click Products page\n&amp;gt;           self.cf.click_element(By.XPATH, productPageLocator.product_button)\n\nTests\\Automation_Exercise\\test_cart.py:191: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nShared\\commonfunctions.py:161: in click_element\n    self.locate_element(locator, value, name).click()\n.venv\\lib\\site-packages\\playwright\\sync_api\\_generated.py:15631: in click\n    self._sync(\n.venv\\lib\\site-packages\\playwright\\_impl\\_locator.py:162: in click\n    return await self._frame._click(self._selector, strict=True, **params)\n.venv\\lib\\site-packages\\playwright\\_impl\\_frame.py:566: in _click\n    await self._channel.send(&amp;quot;click&amp;quot;, self._timeout, locals_to_params(locals()))\n.venv\\lib\\site-packages\\playwright\\_impl\\_connection.py:69: in send\n    return await self._connection.wrap_api_call(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;playwright._impl._connection.Connection object at 0x000001E9CBAE1BA0&amp;gt;\ncb = &amp;lt;function Channel.send.&amp;lt;locals&amp;gt;.&amp;lt;lambda&amp;gt; at 0x000001E9CCB0C9D0&amp;gt;\nis_internal = False, title = None\n\n    async def wrap_api_call(\n        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None\n    ) -&amp;gt; Any:\n        if self._api_zone.get():\n            return await cb()\n        task = asyncio.current_task(self._loop)\n        st: List[inspect.FrameInfo] = getattr(\n            task, &amp;quot;__pw_stack__&amp;quot;, None\n        ) or inspect.stack(0)\n    \n        parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)\n        self._api_zone.set(parsed_st)\n        try:\n            return await cb()\n        except Exception as error:\n&amp;gt;           raise rewrite_error(error, f&amp;quot;{parsed_st[&amp;#x27;apiName&amp;#x27;]}: {error}&amp;quot;) from None\nE           playwright._impl._errors.TargetClosedError: Locator.click: Target page, context or browser has been closed\nE           Call log:\nE             - waiting for locator(&amp;quot;//div[@class=&amp;#x27;shop-menu pull-right&amp;#x27;]//a[@href=&amp;#x27;/products&amp;#x27; or normalize-space(text())=&amp;#x27;Products&amp;#x27;]&amp;quot;).first\n\n.venv\\lib\\site-packages\\playwright\\_impl\\_connection.py:559: TargetClosedError\n\n----------------------------- Captured stdout call -----------------------------\nError Occured: Locator.click: Target page, context or browser has been closed\nCall log:\n  - waiting for locator(&amp;quot;//div[@class=&amp;#x27;shop-menu pull-right&amp;#x27;]//a[@href=&amp;#x27;/products&amp;#x27; or normalize-space(text())=&amp;#x27;Products&amp;#x27;]&amp;quot;).first\n\n&#34;}], &#34;Tests/Automation_Exercise/test_contact_testCase.py::TestAutoContactTestCase::test_6_verify_acccount_contact_us&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_contact_testCase.py::TestAutoContactTestCase::test_6_verify_acccount_contact_us&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td&gt;AUTOMATION SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_contact_testCase.py::TestAutoContactTestCase::test_6_verify_acccount_contact_us&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n\nself = &amp;lt;Tests.Automation_Exercise.test_contact_testCase.TestAutoContactTestCase object at 0x000001E9CBB1B010&amp;gt;\n\n    @pytest.mark.Automation\n    def test_6_verify_acccount_contact_us(self):\n        &amp;#x27;&amp;#x27;&amp;#x27;Test Case 6: Contact Us Form&amp;#x27;&amp;#x27;&amp;#x27;\n        try:\n    \n            # homepage verification\n            homepage_element = self.cf.is_element_visible(By.XPATH, contactUsPageLocator.contact_us_button)\n&amp;gt;           self.assertTrue(homepage_element,&amp;#x27;page is not visible&amp;#x27;)\n\nTests\\Automation_Exercise\\test_contact_testCase.py:35: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;Tests.Automation_Exercise.test_contact_testCase.TestAutoContactTestCase object at 0x000001E9CBB1B010&amp;gt;\nexpr = False, msg = &amp;#x27;page is not visible&amp;#x27;\n\n    def assertTrue(self, expr, msg=None):\n        &amp;quot;&amp;quot;&amp;quot;Check that the expression is true.&amp;quot;&amp;quot;&amp;quot;\n&amp;gt;       assert expr == True, msg\nE       AssertionError: page is not visible\n\nShared\\TestAssert.py:9: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nAssertion Error: page is not visible\n&#34;}], &#34;Tests/Automation_Exercise/test_contact_testCase.py::TestAutoContactTestCase::test_7_verify_test_cases_page&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_contact_testCase.py::TestAutoContactTestCase::test_7_verify_test_cases_page&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td&gt;AUTOMATION SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_contact_testCase.py::TestAutoContactTestCase::test_7_verify_test_cases_page&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n\nself = &amp;lt;Tests.Automation_Exercise.test_contact_testCase.TestAutoContactTestCase object at 0x000001E9CBB1AD70&amp;gt;\n\n    def test_7_verify_test_cases_page(self):\n        &amp;#x27;&amp;#x27;&amp;#x27;Test Case 7: Verify Test Cases Page&amp;#x27;&amp;#x27;&amp;#x27;\n        try:\n    \n            # homepage verification\n            homepage_element = self.cf.is_element_visible(By.XPATH, testCasePageLocator.test_case_button)\n&amp;gt;           self.assertTrue(homepage_element,&amp;#x27;page is not visible&amp;#x27;)\n\nTests\\Automation_Exercise\\test_contact_testCase.py:88: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;Tests.Automation_Exercise.test_contact_testCase.TestAutoContactTestCase object at 0x000001E9CBB1AD70&amp;gt;\nexpr = False, msg = &amp;#x27;page is not visible&amp;#x27;\n\n    def assertTrue(self, expr, msg=None):\n        &amp;quot;&amp;quot;&amp;quot;Check that the expression is true.&amp;quot;&amp;quot;&amp;quot;\n&amp;gt;       assert expr == True, msg\nE       AssertionError: page is not visible\n\nShared\\TestAssert.py:9: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nAssertion Error: page is not visible\n&#34;}], &#34;Tests/Automation_Exercise/test_order.py::TestAutoOrder::test_16_verify_place_order_login_before_checkout&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_order.py::TestAutoOrder::test_16_verify_place_order_login_before_checkout&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td&gt;AUTOMATION SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_order.py::TestAutoOrder::test_16_verify_place_order_login_before_checkout&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n\nself = &amp;lt;Tests.Automation_Exercise.test_order.TestAutoOrder object at 0x000001E9CBB648E0&amp;gt;\n\n    def test_16_verify_place_order_login_before_checkout(self):\n        &amp;#x27;&amp;#x27;&amp;#x27;Test Case 16: Place Order: Login before Checkout&amp;#x27;&amp;#x27;&amp;#x27;\n    \n        try:\n            # homepage verification\n            homepage_element = self.cf.is_element_visible(By.XPATH, homePageLocator.product_button)\n&amp;gt;           self.assertTrue(homepage_element, &amp;quot;Homepage not visible&amp;quot;)\n\nTests\\Automation_Exercise\\test_order.py:40: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;Tests.Automation_Exercise.test_order.TestAutoOrder object at 0x000001E9CBB648E0&amp;gt;\nexpr = False, msg = &amp;#x27;Homepage not visible&amp;#x27;\n\n    def assertTrue(self, expr, msg=None):\n        &amp;quot;&amp;quot;&amp;quot;Check that the expression is true.&amp;quot;&amp;quot;&amp;quot;\n&amp;gt;       assert expr == True, msg\nE       AssertionError: Homepage not visible\n\nShared\\TestAssert.py:9: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nAssertion Error: Homepage not visible\n&#34;}], &#34;Tests/Automation_Exercise/test_order.py::TestAutoOrder::test_23_verify_address_details_in_checkout_page&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_order.py::TestAutoOrder::test_23_verify_address_details_in_checkout_page&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td&gt;AUTOMATION SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_order.py::TestAutoOrder::test_23_verify_address_details_in_checkout_page&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n\nself = &amp;lt;Tests.Automation_Exercise.test_order.TestAutoOrder object at 0x000001E9CBB641C0&amp;gt;\n\n    def test_23_verify_address_details_in_checkout_page(self):\n        &amp;#x27;&amp;#x27;&amp;#x27;Test Case 23: Verify address details in checkout page&amp;#x27;&amp;#x27;&amp;#x27;\n        try:\n            homepage_visible = self.cf.is_element_visible(By.XPATH, homePageLocator.product_button)\n&amp;gt;           self.assertTrue(homepage_visible, &amp;quot;Home page is not visible&amp;quot;)\n\nTests\\Automation_Exercise\\test_order.py:126: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;Tests.Automation_Exercise.test_order.TestAutoOrder object at 0x000001E9CBB641C0&amp;gt;\nexpr = False, msg = &amp;#x27;Home page is not visible&amp;#x27;\n\n    def assertTrue(self, expr, msg=None):\n        &amp;quot;&amp;quot;&amp;quot;Check that the expression is true.&amp;quot;&amp;quot;&amp;quot;\n&amp;gt;       assert expr == True, msg\nE       AssertionError: Home page is not visible\n\nShared\\TestAssert.py:9: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nAssertion Error: Home page is not visible\n&#34;}], &#34;Tests/Automation_Exercise/test_order.py::TestAutoOrder::test_14_verify_place_order_register_while_checkout&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_order.py::TestAutoOrder::test_14_verify_place_order_register_while_checkout&#34;, &#34;duration&#34;: &#34;00:00:20&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td&gt;AUTOMATION SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_order.py::TestAutoOrder::test_14_verify_place_order_register_while_checkout&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:20&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n\nself = &amp;lt;Tests.Automation_Exercise.test_order.TestAutoOrder object at 0x000001E9CBB64DC0&amp;gt;\n\n    def test_14_verify_place_order_register_while_checkout(self):\n        &amp;#x27;&amp;#x27;&amp;#x27;Test Case 14: Place Order: Register while Checkout&amp;#x27;&amp;#x27;&amp;#x27;\n        try:\n            # homepage verification\n            homepage_element = self.cf.is_element_visible(By.XPATH, homePageLocator.product_button)\n            self.assertTrue(homepage_element, &amp;quot;Homepage not visible&amp;quot;)\n    \n            # click on product\n            self.cf.click_element(By.XPATH, productPageLocator.product_button)\n    \n            # Add product to cart\n&amp;gt;           self.obj_productPage.add_product_to_cart_by_index(TEST_DATA_1[&amp;quot;products&amp;quot;][&amp;quot;single_add_index&amp;quot;])\n\nTests\\Automation_Exercise\\test_order.py:213: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nPages\\Automation_Exercise\\productPage.py:109: in add_product_to_cart_by_index\n    self.cf.hover_and_click(By.XPATH, hover_xpath, By.XPATH, add_to_cart_xpath)\nShared\\commonfunctions.py:232: in hover_and_click\n    self.locate_element(hover_locator, hover_value, hover_name).hover()\n.venv\\lib\\site-packages\\playwright\\sync_api\\_generated.py:17035: in hover\n    self._sync(\n.venv\\lib\\site-packages\\playwright\\_impl\\_locator.py:460: in hover\n    return await self._frame.hover(\n.venv\\lib\\site-packages\\playwright\\_impl\\_frame.py:741: in hover\n    await self._channel.send(&amp;quot;hover&amp;quot;, self._timeout, locals_to_params(locals()))\n.venv\\lib\\site-packages\\playwright\\_impl\\_connection.py:69: in send\n    return await self._connection.wrap_api_call(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;playwright._impl._connection.Connection object at 0x000001E9CBAE1BA0&amp;gt;\ncb = &amp;lt;function Channel.send.&amp;lt;locals&amp;gt;.&amp;lt;lambda&amp;gt; at 0x000001E9CC9DB400&amp;gt;\nis_internal = False, title = None\n\n    async def wrap_api_call(\n        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None\n    ) -&amp;gt; Any:\n        if self._api_zone.get():\n            return await cb()\n        task = asyncio.current_task(self._loop)\n        st: List[inspect.FrameInfo] = getattr(\n            task, &amp;quot;__pw_stack__&amp;quot;, None\n        ) or inspect.stack(0)\n    \n        parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)\n        self._api_zone.set(parsed_st)\n        try:\n            return await cb()\n        except Exception as error:\n&amp;gt;           raise rewrite_error(error, f&amp;quot;{parsed_st[&amp;#x27;apiName&amp;#x27;]}: {error}&amp;quot;) from None\nE           playwright._impl._errors.TargetClosedError: Locator.hover: Target page, context or browser has been closed\nE           Call log:\nE             - waiting for locator(&amp;quot;xpath=(//div[@class=&amp;#x27;productinfo text-center&amp;#x27;])[1]&amp;quot;).first\n\n.venv\\lib\\site-packages\\playwright\\_impl\\_connection.py:559: TargetClosedError\n\n----------------------------- Captured stdout call -----------------------------\nError Occured: Locator.hover: Target page, context or browser has been closed\nCall log:\n  - waiting for locator(&amp;quot;xpath=(//div[@class=&amp;#x27;productinfo text-center&amp;#x27;])[1]&amp;quot;).first\n\n&#34;}], &#34;Tests/Automation_Exercise/test_order.py::TestAutoOrder::test_15_verify_place_order_register_before_checkout&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_order.py::TestAutoOrder::test_15_verify_place_order_register_before_checkout::setup&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td&gt;N/A&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_order.py::TestAutoOrder::test_15_verify_place_order_register_before_checkout::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n\nrequest = &amp;lt;SubRequest &amp;#x27;page&amp;#x27; for &amp;lt;Function test_15_verify_place_order_register_before_checkout&amp;gt;&amp;gt;\nplaywright_instance = &amp;lt;playwright._impl._playwright.Playwright object at 0x000001E9CBAE0CA0&amp;gt;\n\n    @pytest.fixture(scope=&amp;quot;function&amp;quot;)\n    def page(request, playwright_instance):\n    \n        browser = playwright_instance.chromium.launch(\n            headless=False,\n            args=[&amp;quot;--start-maximized&amp;quot;],\n            executable_path=r&amp;quot;C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe&amp;quot;,\n            slow_mo=350\n        )\n    \n        context = browser.new_context(\n            no_viewport=True,\n            accept_downloads=True\n        )\n    \n        context.set_default_timeout(120000)\n    \n        page: Page = context.new_page()\n    \n    \n        # if request.node.get_closest_marker(&amp;quot;Automation&amp;quot;):\n        #     site = &amp;quot;https://automationexercise.com/&amp;quot;\n        # elif request.node.get_closest_marker(&amp;quot;SauceDemo&amp;quot;):\n        #     site = &amp;quot;https://www.saucedemo.com/&amp;quot;\n        # else:\n        #     raise Exception(&amp;quot;Test must have Automation or SauceDemo marker&amp;quot;)\n    \n    \n    \n        download_path = os.path.join(os.getcwd(), &amp;quot;downloads&amp;quot;)\n        os.makedirs(download_path, exist_ok=True)\n    \n        request.cls.download_path = download_path\n        # request.cls.page = page\n    \n        site = getattr(request.cls, &amp;quot;site&amp;quot;, None)\n    \n&amp;gt;       page.goto(site)\n\nconftest.py:199: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n.venv\\lib\\site-packages\\playwright\\sync_api\\_generated.py:9054: in goto\n    self._sync(\n.venv\\lib\\site-packages\\playwright\\_impl\\_page.py:552: in goto\n    return await self._main_frame.goto(**locals_to_params(locals()))\n.venv\\lib\\site-packages\\playwright\\_impl\\_frame.py:152: in goto\n    from_nullable_channel(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nchannel = {&amp;#x27;guid&amp;#x27;: &amp;#x27;response@f814a73e561131697b2661f8e9ac39ed&amp;#x27;}\n\n    def from_nullable_channel(channel: Optional[Channel]) -&amp;gt; Optional[Any]:\n&amp;gt;       return channel._object if channel else None\nE       AttributeError: &amp;#x27;dict&amp;#x27; object has no attribute &amp;#x27;_object&amp;#x27;\n\n.venv\\lib\\site-packages\\playwright\\_impl\\_connection.py:587: AttributeError\n&#34;}], &#34;Tests/Automation_Exercise/test_order.py::TestAutoOrder::test_24_verify_Download_Invoice_after_purchase_order&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_order.py::TestAutoOrder::test_24_verify_Download_Invoice_after_purchase_order&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td&gt;AUTOMATION SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_order.py::TestAutoOrder::test_24_verify_Download_Invoice_after_purchase_order&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n\nself = &amp;lt;Tests.Automation_Exercise.test_order.TestAutoOrder object at 0x000001E9CBB65480&amp;gt;\n\n    def test_24_verify_Download_Invoice_after_purchase_order(self):\n        &amp;#x27;&amp;#x27;&amp;#x27;Test Case 24: Download Invoice after purchase order&amp;#x27;&amp;#x27;&amp;#x27;\n        try:\n            # Verify home page is visible\n            homepage_visible = self.cf.is_element_visible(By.XPATH, homePageLocator.product_button)\n&amp;gt;           self.assertTrue(homepage_visible, &amp;#x27;Home page is not visible&amp;#x27;)\n\nTests\\Automation_Exercise\\test_order.py:437: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;Tests.Automation_Exercise.test_order.TestAutoOrder object at 0x000001E9CBB65480&amp;gt;\nexpr = False, msg = &amp;#x27;Home page is not visible&amp;#x27;\n\n    def assertTrue(self, expr, msg=None):\n        &amp;quot;&amp;quot;&amp;quot;Check that the expression is true.&amp;quot;&amp;quot;&amp;quot;\n&amp;gt;       assert expr == True, msg\nE       AssertionError: Home page is not visible\n\nShared\\TestAssert.py:9: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nAssertion Error: Home page is not visible\n&#34;}], &#34;Tests/Automation_Exercise/test_products.py::TestAutoProducts::test_8_verify_product_detail_page&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_products.py::TestAutoProducts::test_8_verify_product_detail_page&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td&gt;AUTOMATION SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_products.py::TestAutoProducts::test_8_verify_product_detail_page&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n\nself = &amp;lt;Tests.Automation_Exercise.test_products.TestAutoProducts object at 0x000001E9CBB65B10&amp;gt;\n\n    def test_8_verify_product_detail_page(self):\n        &amp;#x27;&amp;#x27;&amp;#x27;Test Case 8: Verify All Products and product detail page&amp;#x27;&amp;#x27;&amp;#x27;\n        try:\n    \n            # homepage verification\n            homepage_element = self.cf.is_element_visible(By.XPATH, productPageLocator.product_button)\n&amp;gt;           self.assertTrue(homepage_element, &amp;#x27;page is not visible&amp;#x27;)\n\nTests\\Automation_Exercise\\test_products.py:29: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;Tests.Automation_Exercise.test_products.TestAutoProducts object at 0x000001E9CBB65B10&amp;gt;\nexpr = False, msg = &amp;#x27;page is not visible&amp;#x27;\n\n    def assertTrue(self, expr, msg=None):\n        &amp;quot;&amp;quot;&amp;quot;Check that the expression is true.&amp;quot;&amp;quot;&amp;quot;\n&amp;gt;       assert expr == True, msg\nE       AssertionError: page is not visible\n\nShared\\TestAssert.py:9: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nAssertion Error: page is not visible\n&#34;}], &#34;Tests/Automation_Exercise/test_products.py::TestAutoProducts::test_9_verify_search_product&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_products.py::TestAutoProducts::test_9_verify_search_product&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td&gt;AUTOMATION SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_products.py::TestAutoProducts::test_9_verify_search_product&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n\nself = &amp;lt;Tests.Automation_Exercise.test_products.TestAutoProducts object at 0x000001E9CBB1B280&amp;gt;\n\n    def test_9_verify_search_product(self):\n        &amp;#x27;&amp;#x27;&amp;#x27;Test Case 9: Search Product&amp;#x27;&amp;#x27;&amp;#x27;\n        try:\n    \n            # homepage verification\n            homepage_element = self.cf.is_element_visible(By.XPATH, productPageLocator.product_button)\n&amp;gt;           self.assertTrue(homepage_element, &amp;#x27;page is not visible&amp;#x27;)\n\nTests\\Automation_Exercise\\test_products.py:88: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;Tests.Automation_Exercise.test_products.TestAutoProducts object at 0x000001E9CBB1B280&amp;gt;\nexpr = False, msg = &amp;#x27;page is not visible&amp;#x27;\n\n    def assertTrue(self, expr, msg=None):\n        &amp;quot;&amp;quot;&amp;quot;Check that the expression is true.&amp;quot;&amp;quot;&amp;quot;\n&amp;gt;       assert expr == True, msg\nE       AssertionError: page is not visible\n\nShared\\TestAssert.py:9: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nAssertion Error: page is not visible\n&#34;}], &#34;Tests/Automation_Exercise/test_products.py::TestAutoProducts::test_18_verify_view_category_products&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_products.py::TestAutoProducts::test_18_verify_view_category_products&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td&gt;AUTOMATION SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_products.py::TestAutoProducts::test_18_verify_view_category_products&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n\nself = &amp;lt;Tests.Automation_Exercise.test_products.TestAutoProducts object at 0x000001E9CBB65A20&amp;gt;\n\n    def test_18_verify_view_category_products(self):\n        &amp;#x27;&amp;#x27;&amp;#x27;Test Case 18: View Category Products&amp;#x27;&amp;#x27;&amp;#x27;\n        try:\n    \n            #  Verify that categories are visible on left side bar\n            categories_visible = self.cf.is_element_visible(By.XPATH, productPageLocator.category_section_header)\n&amp;gt;           self.assertTrue(categories_visible, &amp;quot;categories sidebar is not visible&amp;quot;)\n\nTests\\Automation_Exercise\\test_products.py:140: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;Tests.Automation_Exercise.test_products.TestAutoProducts object at 0x000001E9CBB65A20&amp;gt;\nexpr = False, msg = &amp;#x27;categories sidebar is not visible&amp;#x27;\n\n    def assertTrue(self, expr, msg=None):\n        &amp;quot;&amp;quot;&amp;quot;Check that the expression is true.&amp;quot;&amp;quot;&amp;quot;\n&amp;gt;       assert expr == True, msg\nE       AssertionError: categories sidebar is not visible\n\nShared\\TestAssert.py:9: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nAssertion Error: categories sidebar is not visible\n&#34;}], &#34;Tests/Automation_Exercise/test_products.py::TestAutoProducts::test_19_verify_view_brand_products&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_products.py::TestAutoProducts::test_19_verify_view_brand_products&#34;, &#34;duration&#34;: &#34;00:00:12&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td&gt;AUTOMATION SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_products.py::TestAutoProducts::test_19_verify_view_brand_products&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:12&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n\nself = &amp;lt;Tests.Automation_Exercise.test_products.TestAutoProducts object at 0x000001E9CBB64FA0&amp;gt;\n\n    def test_19_verify_view_brand_products(self):\n        &amp;#x27;&amp;#x27;&amp;#x27;Test Case 19: View &amp;amp; Cart Brand Products&amp;#x27;&amp;#x27;&amp;#x27;\n        try:\n    \n            # click on  Products page\n            self.cf.click_element(By.XPATH, productPageLocator.product_button)\n    \n            # brand sidebar section verification\n&amp;gt;           brands_visible = self.cf.is_element_visible(By.XPATH, productPageLocator.brand_section_header)\n\nTests\\Automation_Exercise\\test_products.py:174: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nShared\\commonfunctions.py:194: in is_element_visible\n    return element.is_visible()\n.venv\\lib\\site-packages\\playwright\\sync_api\\_generated.py:17297: in is_visible\n    self._sync(self._impl_obj.is_visible(timeout=timeout))\n.venv\\lib\\site-packages\\playwright\\_impl\\_locator.py:531: in is_visible\n    return await self._frame.is_visible(\n.venv\\lib\\site-packages\\playwright\\_impl\\_frame.py:408: in is_visible\n    return await self._channel.send(\n.venv\\lib\\site-packages\\playwright\\_impl\\_connection.py:69: in send\n    return await self._connection.wrap_api_call(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;playwright._impl._connection.Connection object at 0x000001E9CBAE1BA0&amp;gt;\ncb = &amp;lt;function Channel.send.&amp;lt;locals&amp;gt;.&amp;lt;lambda&amp;gt; at 0x000001E9CCAA8A60&amp;gt;\nis_internal = False, title = None\n\n    async def wrap_api_call(\n        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None\n    ) -&amp;gt; Any:\n        if self._api_zone.get():\n            return await cb()\n        task = asyncio.current_task(self._loop)\n        st: List[inspect.FrameInfo] = getattr(\n            task, &amp;quot;__pw_stack__&amp;quot;, None\n        ) or inspect.stack(0)\n    \n        parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)\n        self._api_zone.set(parsed_st)\n        try:\n            return await cb()\n        except Exception as error:\n&amp;gt;           raise rewrite_error(error, f&amp;quot;{parsed_st[&amp;#x27;apiName&amp;#x27;]}: {error}&amp;quot;) from None\nE           playwright._impl._errors.TargetClosedError: Locator.is_visible: Target page, context or browser has been closed\n\n.venv\\lib\\site-packages\\playwright\\_impl\\_connection.py:559: TargetClosedError\n\n----------------------------- Captured stdout call -----------------------------\nError Occured: Locator.is_visible: Target page, context or browser has been closed\n&#34;}], &#34;Tests/Automation_Exercise/test_products.py::TestAutoProducts::test_21_verify_add_review_on_product&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_products.py::TestAutoProducts::test_21_verify_add_review_on_product::setup&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td&gt;N/A&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_products.py::TestAutoProducts::test_21_verify_add_review_on_product::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n\nrequest = &amp;lt;SubRequest &amp;#x27;page&amp;#x27; for &amp;lt;Function test_21_verify_add_review_on_product&amp;gt;&amp;gt;\nplaywright_instance = &amp;lt;playwright._impl._playwright.Playwright object at 0x000001E9CBAE0CA0&amp;gt;\n\n    @pytest.fixture(scope=&amp;quot;function&amp;quot;)\n    def page(request, playwright_instance):\n    \n        browser = playwright_instance.chromium.launch(\n            headless=False,\n            args=[&amp;quot;--start-maximized&amp;quot;],\n            executable_path=r&amp;quot;C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe&amp;quot;,\n            slow_mo=350\n        )\n    \n        context = browser.new_context(\n            no_viewport=True,\n            accept_downloads=True\n        )\n    \n        context.set_default_timeout(120000)\n    \n        page: Page = context.new_page()\n    \n    \n        # if request.node.get_closest_marker(&amp;quot;Automation&amp;quot;):\n        #     site = &amp;quot;https://automationexercise.com/&amp;quot;\n        # elif request.node.get_closest_marker(&amp;quot;SauceDemo&amp;quot;):\n        #     site = &amp;quot;https://www.saucedemo.com/&amp;quot;\n        # else:\n        #     raise Exception(&amp;quot;Test must have Automation or SauceDemo marker&amp;quot;)\n    \n    \n    \n        download_path = os.path.join(os.getcwd(), &amp;quot;downloads&amp;quot;)\n        os.makedirs(download_path, exist_ok=True)\n    \n        request.cls.download_path = download_path\n        # request.cls.page = page\n    \n        site = getattr(request.cls, &amp;quot;site&amp;quot;, None)\n    \n&amp;gt;       page.goto(site)\n\nconftest.py:199: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n.venv\\lib\\site-packages\\playwright\\sync_api\\_generated.py:9054: in goto\n    self._sync(\n.venv\\lib\\site-packages\\playwright\\_impl\\_page.py:552: in goto\n    return await self._main_frame.goto(**locals_to_params(locals()))\n.venv\\lib\\site-packages\\playwright\\_impl\\_frame.py:153: in goto\n    await self._channel.send(\n.venv\\lib\\site-packages\\playwright\\_impl\\_connection.py:69: in send\n    return await self._connection.wrap_api_call(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;playwright._impl._connection.Connection object at 0x000001E9CBAE1BA0&amp;gt;\ncb = &amp;lt;function Channel.send.&amp;lt;locals&amp;gt;.&amp;lt;lambda&amp;gt; at 0x000001E9CCA98B80&amp;gt;\nis_internal = False, title = None\n\n    async def wrap_api_call(\n        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None\n    ) -&amp;gt; Any:\n        if self._api_zone.get():\n            return await cb()\n        task = asyncio.current_task(self._loop)\n        st: List[inspect.FrameInfo] = getattr(\n            task, &amp;quot;__pw_stack__&amp;quot;, None\n        ) or inspect.stack(0)\n    \n        parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)\n        self._api_zone.set(parsed_st)\n        try:\n            return await cb()\n        except Exception as error:\n&amp;gt;           raise rewrite_error(error, f&amp;quot;{parsed_st[&amp;#x27;apiName&amp;#x27;]}: {error}&amp;quot;) from None\nE           playwright._impl._errors.Error: Page.goto: net::ERR_ABORTED; maybe frame was detached?\nE           Call log:\nE             - navigating to &amp;quot;https://automationexercise.com/&amp;quot;, waiting until &amp;quot;load&amp;quot;\n\n.venv\\lib\\site-packages\\playwright\\_impl\\_connection.py:559: Error\n&#34;}], &#34;Tests/Automation_Exercise/test_subscription.py::TestAutoSubscription::test_10_verify_subscription_in_home_page&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_subscription.py::TestAutoSubscription::test_10_verify_subscription_in_home_page::setup&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td&gt;N/A&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_subscription.py::TestAutoSubscription::test_10_verify_subscription_in_home_page::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n\nrequest = &amp;lt;SubRequest &amp;#x27;page&amp;#x27; for &amp;lt;Function test_10_verify_subscription_in_home_page&amp;gt;&amp;gt;\nplaywright_instance = &amp;lt;playwright._impl._playwright.Playwright object at 0x000001E9CBAE0CA0&amp;gt;\n\n    @pytest.fixture(scope=&amp;quot;function&amp;quot;)\n    def page(request, playwright_instance):\n    \n        browser = playwright_instance.chromium.launch(\n            headless=False,\n            args=[&amp;quot;--start-maximized&amp;quot;],\n            executable_path=r&amp;quot;C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe&amp;quot;,\n            slow_mo=350\n        )\n    \n        context = browser.new_context(\n            no_viewport=True,\n            accept_downloads=True\n        )\n    \n        context.set_default_timeout(120000)\n    \n        page: Page = context.new_page()\n    \n    \n        # if request.node.get_closest_marker(&amp;quot;Automation&amp;quot;):\n        #     site = &amp;quot;https://automationexercise.com/&amp;quot;\n        # elif request.node.get_closest_marker(&amp;quot;SauceDemo&amp;quot;):\n        #     site = &amp;quot;https://www.saucedemo.com/&amp;quot;\n        # else:\n        #     raise Exception(&amp;quot;Test must have Automation or SauceDemo marker&amp;quot;)\n    \n    \n    \n        download_path = os.path.join(os.getcwd(), &amp;quot;downloads&amp;quot;)\n        os.makedirs(download_path, exist_ok=True)\n    \n        request.cls.download_path = download_path\n        # request.cls.page = page\n    \n        site = getattr(request.cls, &amp;quot;site&amp;quot;, None)\n    \n&amp;gt;       page.goto(site)\n\nconftest.py:199: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n.venv\\lib\\site-packages\\playwright\\sync_api\\_generated.py:9054: in goto\n    self._sync(\n.venv\\lib\\site-packages\\playwright\\_impl\\_page.py:552: in goto\n    return await self._main_frame.goto(**locals_to_params(locals()))\n.venv\\lib\\site-packages\\playwright\\_impl\\_frame.py:153: in goto\n    await self._channel.send(\n.venv\\lib\\site-packages\\playwright\\_impl\\_connection.py:69: in send\n    return await self._connection.wrap_api_call(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;playwright._impl._connection.Connection object at 0x000001E9CBAE1BA0&amp;gt;\ncb = &amp;lt;function Channel.send.&amp;lt;locals&amp;gt;.&amp;lt;lambda&amp;gt; at 0x000001E9CC90D7E0&amp;gt;\nis_internal = False, title = None\n\n    async def wrap_api_call(\n        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None\n    ) -&amp;gt; Any:\n        if self._api_zone.get():\n            return await cb()\n        task = asyncio.current_task(self._loop)\n        st: List[inspect.FrameInfo] = getattr(\n            task, &amp;quot;__pw_stack__&amp;quot;, None\n        ) or inspect.stack(0)\n    \n        parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)\n        self._api_zone.set(parsed_st)\n        try:\n            return await cb()\n        except Exception as error:\n&amp;gt;           raise rewrite_error(error, f&amp;quot;{parsed_st[&amp;#x27;apiName&amp;#x27;]}: {error}&amp;quot;) from None\nE           playwright._impl._errors.Error: Page.goto: net::ERR_ABORTED; maybe frame was detached?\nE           Call log:\nE             - navigating to &amp;quot;https://automationexercise.com/&amp;quot;, waiting until &amp;quot;load&amp;quot;\n\n.venv\\lib\\site-packages\\playwright\\_impl\\_connection.py:559: Error\n&#34;}], &#34;Tests/Automation_Exercise/test_subscription.py::TestAutoSubscription::test_11_verify_subscription_in_cart_page&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_subscription.py::TestAutoSubscription::test_11_verify_subscription_in_cart_page::setup&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td&gt;N/A&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_subscription.py::TestAutoSubscription::test_11_verify_subscription_in_cart_page::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n\nrequest = &amp;lt;SubRequest &amp;#x27;page&amp;#x27; for &amp;lt;Function test_11_verify_subscription_in_cart_page&amp;gt;&amp;gt;\nplaywright_instance = &amp;lt;playwright._impl._playwright.Playwright object at 0x000001E9CBAE0CA0&amp;gt;\n\n    @pytest.fixture(scope=&amp;quot;function&amp;quot;)\n    def page(request, playwright_instance):\n    \n        browser = playwright_instance.chromium.launch(\n            headless=False,\n            args=[&amp;quot;--start-maximized&amp;quot;],\n            executable_path=r&amp;quot;C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe&amp;quot;,\n            slow_mo=350\n        )\n    \n        context = browser.new_context(\n            no_viewport=True,\n            accept_downloads=True\n        )\n    \n        context.set_default_timeout(120000)\n    \n        page: Page = context.new_page()\n    \n    \n        # if request.node.get_closest_marker(&amp;quot;Automation&amp;quot;):\n        #     site = &amp;quot;https://automationexercise.com/&amp;quot;\n        # elif request.node.get_closest_marker(&amp;quot;SauceDemo&amp;quot;):\n        #     site = &amp;quot;https://www.saucedemo.com/&amp;quot;\n        # else:\n        #     raise Exception(&amp;quot;Test must have Automation or SauceDemo marker&amp;quot;)\n    \n    \n    \n        download_path = os.path.join(os.getcwd(), &amp;quot;downloads&amp;quot;)\n        os.makedirs(download_path, exist_ok=True)\n    \n        request.cls.download_path = download_path\n        # request.cls.page = page\n    \n        site = getattr(request.cls, &amp;quot;site&amp;quot;, None)\n    \n&amp;gt;       page.goto(site)\n\nconftest.py:199: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n.venv\\lib\\site-packages\\playwright\\sync_api\\_generated.py:9054: in goto\n    self._sync(\n.venv\\lib\\site-packages\\playwright\\_impl\\_page.py:552: in goto\n    return await self._main_frame.goto(**locals_to_params(locals()))\n.venv\\lib\\site-packages\\playwright\\_impl\\_frame.py:153: in goto\n    await self._channel.send(\n.venv\\lib\\site-packages\\playwright\\_impl\\_connection.py:69: in send\n    return await self._connection.wrap_api_call(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;playwright._impl._connection.Connection object at 0x000001E9CBAE1BA0&amp;gt;\ncb = &amp;lt;function Channel.send.&amp;lt;locals&amp;gt;.&amp;lt;lambda&amp;gt; at 0x000001E9CCA549D0&amp;gt;\nis_internal = False, title = None\n\n    async def wrap_api_call(\n        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None\n    ) -&amp;gt; Any:\n        if self._api_zone.get():\n            return await cb()\n        task = asyncio.current_task(self._loop)\n        st: List[inspect.FrameInfo] = getattr(\n            task, &amp;quot;__pw_stack__&amp;quot;, None\n        ) or inspect.stack(0)\n    \n        parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)\n        self._api_zone.set(parsed_st)\n        try:\n            return await cb()\n        except Exception as error:\n&amp;gt;           raise rewrite_error(error, f&amp;quot;{parsed_st[&amp;#x27;apiName&amp;#x27;]}: {error}&amp;quot;) from None\nE           playwright._impl._errors.Error: Page.goto: net::ERR_ABORTED; maybe frame was detached?\nE           Call log:\nE             - navigating to &amp;quot;https://automationexercise.com/&amp;quot;, waiting until &amp;quot;load&amp;quot;\n\n.venv\\lib\\site-packages\\playwright\\_impl\\_connection.py:559: Error\n&#34;}], &#34;Tests/Automation_Exercise/test_ui_scroll.py::TestAutoUiScroll::test_25_verify_scroll_up_using_arrow_button_and_scroll_down_functionality&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Failed&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_ui_scroll.py::TestAutoUiScroll::test_25_verify_scroll_up_using_arrow_button_and_scroll_down_functionality&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Failed&lt;/td&gt;&#34;, &#34;&lt;td&gt;AUTOMATION SITE&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_ui_scroll.py::TestAutoUiScroll::test_25_verify_scroll_up_using_arrow_button_and_scroll_down_functionality&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n\nself = &amp;lt;Tests.Automation_Exercise.test_ui_scroll.TestAutoUiScroll object at 0x000001E9CBB66980&amp;gt;\n\n    def test_25_verify_scroll_up_using_arrow_button_and_scroll_down_functionality(self):\n        &amp;#x27;&amp;#x27;&amp;#x27;Test Case 25: Verify Scroll Up using &amp;#x27;Arrow&amp;#x27; button and Scroll Down functionality&amp;#x27;&amp;#x27;&amp;#x27;\n        try:\n    \n            # homepage verification\n            homepage_element = self.cf.is_element_visible(By.XPATH, homePageLocator.product_button)\n&amp;gt;           self.assertTrue(homepage_element,&amp;#x27;page is not visible&amp;#x27;)\n\nTests\\Automation_Exercise\\test_ui_scroll.py:31: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;Tests.Automation_Exercise.test_ui_scroll.TestAutoUiScroll object at 0x000001E9CBB66980&amp;gt;\nexpr = False, msg = &amp;#x27;page is not visible&amp;#x27;\n\n    def assertTrue(self, expr, msg=None):\n        &amp;quot;&amp;quot;&amp;quot;Check that the expression is true.&amp;quot;&amp;quot;&amp;quot;\n&amp;gt;       assert expr == True, msg\nE       AssertionError: page is not visible\n\nShared\\TestAssert.py:9: AssertionError\n\n----------------------------- Captured stdout call -----------------------------\nAssertion Error: page is not visible\n&#34;}], &#34;Tests/Automation_Exercise/test_ui_scroll.py::TestAutoUiScroll::test_26_verify_scroll_up_without_arrow_button_and_scroll_down_functionality&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Error&#34;, &#34;testId&#34;: &#34;Tests/Automation_Exercise/test_ui_scroll.py::TestAutoUiScroll::test_26_verify_scroll_up_without_arrow_button_and_scroll_down_functionality::setup&#34;, &#34;duration&#34;: &#34;00:00:05&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Error&lt;/td&gt;&#34;, &#34;&lt;td&gt;N/A&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;Tests/Automation_Exercise/test_ui_scroll.py::TestAutoUiScroll::test_26_verify_scroll_up_without_arrow_button_and_scroll_down_functionality::setup&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:05&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;[gw0] win32 -- Python 3.10.0 C:\\Users\\TNET17\\Desktop\\playwright_pytest_v4\\.venv\\Scripts\\python.exe\n\nrequest = &amp;lt;SubRequest &amp;#x27;page&amp;#x27; for &amp;lt;Function test_26_verify_scroll_up_without_arrow_button_and_scroll_down_functionality&amp;gt;&amp;gt;\nplaywright_instance = &amp;lt;playwright._impl._playwright.Playwright object at 0x000001E9CBAE0CA0&amp;gt;\n\n    @pytest.fixture(scope=&amp;quot;function&amp;quot;)\n    def page(request, playwright_instance):\n    \n        browser = playwright_instance.chromium.launch(\n            headless=False,\n            args=[&amp;quot;--start-maximized&amp;quot;],\n            executable_path=r&amp;quot;C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe&amp;quot;,\n            slow_mo=350\n        )\n    \n        context = browser.new_context(\n            no_viewport=True,\n            accept_downloads=True\n        )\n    \n        context.set_default_timeout(120000)\n    \n        page: Page = context.new_page()\n    \n    \n        # if request.node.get_closest_marker(&amp;quot;Automation&amp;quot;):\n        #     site = &amp;quot;https://automationexercise.com/&amp;quot;\n        # elif request.node.get_closest_marker(&amp;quot;SauceDemo&amp;quot;):\n        #     site = &amp;quot;https://www.saucedemo.com/&amp;quot;\n        # else:\n        #     raise Exception(&amp;quot;Test must have Automation or SauceDemo marker&amp;quot;)\n    \n    \n    \n        download_path = os.path.join(os.getcwd(), &amp;quot;downloads&amp;quot;)\n        os.makedirs(download_path, exist_ok=True)\n    \n        request.cls.download_path = download_path\n        # request.cls.page = page\n    \n        site = getattr(request.cls, &amp;quot;site&amp;quot;, None)\n    \n&amp;gt;       page.goto(site)\n\nconftest.py:199: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n.venv\\lib\\site-packages\\playwright\\sync_api\\_generated.py:9054: in goto\n    self._sync(\n.venv\\lib\\site-packages\\playwright\\_impl\\_page.py:552: in goto\n    return await self._main_frame.goto(**locals_to_params(locals()))\n.venv\\lib\\site-packages\\playwright\\_impl\\_frame.py:153: in goto\n    await self._channel.send(\n.venv\\lib\\site-packages\\playwright\\_impl\\_connection.py:69: in send\n    return await self._connection.wrap_api_call(\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = &amp;lt;playwright._impl._connection.Connection object at 0x000001E9CBAE1BA0&amp;gt;\ncb = &amp;lt;function Channel.send.&amp;lt;locals&amp;gt;.&amp;lt;lambda&amp;gt; at 0x000001E9CC97C550&amp;gt;\nis_internal = False, title = None\n\n    async def wrap_api_call(\n        self, cb: Callable[[], Any], is_internal: bool = False, title: str = None\n    ) -&amp;gt; Any:\n        if self._api_zone.get():\n            return await cb()\n        task = asyncio.current_task(self._loop)\n        st: List[inspect.FrameInfo] = getattr(\n            task, &amp;quot;__pw_stack__&amp;quot;, None\n        ) or inspect.stack(0)\n    \n        parsed_st = _extract_stack_trace_information_from_stack(st, is_internal, title)\n        self._api_zone.set(parsed_st)\n        try:\n            return await cb()\n        except Exception as error:\n&amp;gt;           raise rewrite_error(error, f&amp;quot;{parsed_st[&amp;#x27;apiName&amp;#x27;]}: {error}&amp;quot;) from None\nE           playwright._impl._errors.Error: Page.goto: net::ERR_ABORTED; maybe frame was detached?\nE           Call log:\nE             - navigating to &amp;quot;https://automationexercise.com/&amp;quot;, waiting until &amp;quot;load&amp;quot;\n\n.venv\\lib\\site-packages\\playwright\\_impl\\_connection.py:559: Error\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;Master Automation &amp; SauceDemo Report&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > .col-result')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > .col-result')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+  </body>
+</html>

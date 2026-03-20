@@ -1,0 +1,143 @@
+{
+  "_comments": {
+    "signup": "Used for signup + account creation flows (mainly TC1 Register User, and any test that creates a new account). checkboxes controls newsletter/offer tick behavior.",
+    "checkout_signup": "Used for checkout-related signup/address flows (TC14, TC15, TC23, TC24). checkboxes controls newsletter/offer tick behavior.",
+    "login": "Used for login flows. Currently used: login.valid (TC20), login.invalid (TC3), login.logout_user (TC4). Note: TC2 and TC16 now create fresh accounts inside the test, so they do not use login.valid/place_order_user.",
+    "existing_signup": "Used for negative signup validation when trying to signup with an already-registered email (TC5).",
+    "contact_us": "Used for Contact Us form submission (TC6).",
+    "subscription": "Used for subscription email input in footer (TC10 home page + TC11 cart page).",
+    "review": "Used for submitting product review (TC21).",
+    "search": "Used for product search keyword (TC9 + TC20).",
+    "payment": "Used for entering card/payment details during order placement (TC14/TC15/TC16/TC24).",
+    "order": "Used for checkout order comment before placing order (TC14/TC15/TC16/TC24).",
+    "products": "Central control for product indices/quantity used across product/cart tests (TC8/TC12/TC13/TC14/TC17/TC20/TC23/TC24).",
+    "categories": "Central control for category navigation values (TC18).",
+    "brands": "Central control for brand navigation values (TC19)."
+  },
+
+  "signup": {
+    "name": "ak",
+    "title": "Mr",
+    "password": "V9!rQ#2mL@7Zx$A6H^wP",
+    "dob": "682005",
+    "checkboxes": {
+      "newsletter": true,
+      "special_offer": true
+    },
+    "address": {
+      "first_name": "amar",
+      "last_name": "D'souza",
+      "company": "Knovs pvt.ltd",
+      "address1": "kh-5",
+      "address2": "Gandhinagar",
+      "country": "India",
+      "state": "Gujarat",
+      "city": "Gandhinagar",
+      "zipcode": "382016",
+      "mobile": "7862352013"
+    },
+
+    "email_strategy": {
+      "prefix": "bruce_",
+      "domain": "@gmail.com"
+    }
+  },
+
+  "checkout_signup": {
+    "name": "Bruce",
+    "title": "Mr",
+    "password": "Batman@123",
+    "dob": "682005",
+    "checkboxes": {
+      "newsletter": true,
+      "special_offer": true
+    },
+    "address": {
+      "first_name": "Bruce",
+      "last_name": "Wayne",
+      "company": "Wayne Enterprises",
+      "address1": "Gotham Street",
+      "address2": "Batcave",
+      "country": "United States",
+      "state": "New Jersey",
+      "city": "New Jersey",
+      "zipcode": "506090",
+      "mobile": "9876543210"
+    }
+  },
+
+  "products": {
+    "view_product_index": 2,
+    "cart_add_indices": [1,2],
+    "cart_add_name":["Men Tshirt", "Sleeves Printed Top - White"],
+    "remove_cart_name":["Men Tshirt", "Sleeves Printed Top - White"],
+    "single_add_index": 1,
+    "expected_cart_count": 2,
+    "quantity": 4,
+    "quantity_product_name": "Men Tshirt"
+  },
+
+  "categories": {
+    "first": {
+      "main": "Women",
+      "sub": "Tops",
+      "header": "WOMEN - TOPS PRODUCTS"
+    },
+    "second": {
+      "main": "Men",
+      "sub": "Tshirts",
+      "header": "MEN - TSHIRTS PRODUCTS"
+    }
+  },
+
+  "brands": {
+    "first": "POLO",
+    "second": "H&M"
+  },
+
+  "login": {
+    "valid": { "email": "batman49@gmail.com", "password": "123456789" },
+    "valid_alt": { "email": "batman50@gmail.com", "password": "123456789" },
+    "logout_user": { "email": "batman80@gmail.com", "password": "123456789" },
+    "place_order_user": { "email": "batman1@gmail.com", "password": "123456789" },
+    "invalid": { "email": "batman2@gmail.com", "password": "1234567890" }
+  },
+
+  "existing_signup": {
+    "name": "batman",
+    "email": "ak5625@gmail.com"
+  },
+
+  "contact_us": {
+    "name": "batman",
+    "email": "batman1@gmail.com",
+    "subject": "repair to batmobile",
+    "message": "there is problems in breaks"
+  },
+
+  "subscription": {
+    "email": "batman@gmail.com"
+  },
+
+  "review": {
+    "name": "Bruce",
+    "email": "bruce@gmail.com",
+    "text": "Nice product. Worth buying!"
+  },
+
+  "search": {
+    "keyword": "shirt"
+  },
+
+  "payment": {
+    "name_on_card": "Batman",
+    "card_number": "4111111111111111",
+    "cvc": "123",
+    "expiry_month": "12",
+    "expiry_year": "2027"
+  },
+
+  "order": {
+    "comment": "Deliver at night"
+  }
+}
