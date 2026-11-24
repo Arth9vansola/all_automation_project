@@ -20,6 +20,7 @@ This project contains **26 automated test cases** covering 5 major application w
 
 - Python
 - Selenium WebDriver
+- Playwright
 - Pytest
 - XPath Locators
 
